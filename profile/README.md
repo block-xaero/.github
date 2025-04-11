@@ -39,9 +39,9 @@ XaeroFlux is our decentralized, append-only event storage engine designed for ef
 
 All our projects are open-source and actively maintained. Check out the individual repositories for detailed documentation, installation instructions, and contribution guidelines:
 
-- [ZeroID Repository](https://github.com/block-xaero/zeroid) *(hypothetical link)*
-- [OneChain Repository](https://github.com/block-xaero/onechain) *(hypothetical link)*
-- [XaeroFlux Repository](https://github.com/block-xaero/xaeroflux) *(hypothetical link)*
+- [ZeroID Repository](https://github.com/block-xaero/zeroid)
+- [OneChain Repository](https://github.com/block-xaero/onechain) 
+- [XaeroFlux Repository](https://github.com/block-xaero/xaeroflux) 
 
 ---
 
