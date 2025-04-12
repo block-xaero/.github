@@ -62,7 +62,7 @@ For more details, please refer to our [CONTRIBUTING.md](CONTRIBUTING.md).
 
 Stay up-to-date with our progress and join our community:
 - **Website:** [blockxaero.com](https://blockxaero.io)
-- **discord** TODO: Add discord server here.
+- **discord** https://discord.gg/pDy2hu7X 
 ---
 
 ## License
