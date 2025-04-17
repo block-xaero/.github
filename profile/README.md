@@ -17,4 +17,4 @@ At Block-Xaero, our mission is to create trustless, scalable, and high-performan
 
 Stay up-to-date with our progress and join our community:
 - **Website:** [blockxaero.io](https://blockxaero.io)
-- **discord** TO BE ADDED SOON!
+- **discord** [discord.gg] (https://discord.gg/pDy2hu7X)
