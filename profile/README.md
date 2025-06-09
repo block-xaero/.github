@@ -1,14 +1,14 @@
 # Block-Xaero
 
-Block-Xaero is a pioneering startup building secure, decentralized, and cloudless solutions that empower users and enterprises alike. Our innovative projects—**ZeroID**, **OneChain**, and **XaeroFlux**—aim to redefine trust and efficiency in digital ecosystems.
+Block-Xaero is a pioneering startup building secure, decentralized, and cloudless solutions that empower users and enterprises alike. Our innovative projects—**XaeroID**, **XaeroChain**, and **XaeroFlux**—aim to redefine trust and efficiency in digital ecosystems.
 
 ---
 
 ## Mission
 
 At Block-Xaero, our mission is to create trustless, scalable, and high-performance systems for the decentralized future. We focus on:
-- **Digital Identity (ZeroID):** Empowering individuals with decentralized identity, free from centralized authorities.
-- **Blockchain Evolution (OneChain):** Simplifying blockchain architectures to support unified ledger technologies and robust, scalable governance.
+- **Digital Identity (XaeroID):** Empowering individuals with decentralized identity, free from centralized authorities.
+- **Blockchain Evolution (XaeroID):** Simplifying blockchain architectures to support unified ledger technologies and robust, scalable governance.
 - **Decentralized Storage & Sync (XaeroFlux):** Delivering an append-only, event-based storage engine that seamlessly synchronizes data in a p2p, cloudless fashion, optimized for mobile platforms.
 
 ---
