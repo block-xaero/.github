@@ -53,20 +53,7 @@ Tiny AI models (226MB total) that learn and coordinate peer-to-peer across devic
 ---
 
 ## Flagship Application: Cyan
-
-**Intelligent Collaborative Whiteboarding - No Cloud Required**
-
-Cyan demonstrates the power of our technology stack: a B2B whiteboarding application that transforms handwritten notes into digital text in real-time, enables seamless collaboration, and works entirely offline.
-
-### What Makes Cyan Different
-
-- **🖊️ Intelligent Recognition:** AI models running on-device convert handwriting to digital text instantly
-- **🤝 Real-Time Collaboration:** Multiple users edit simultaneously with automatic conflict resolution
-- **📱 Native Performance:** Flutter frontend with Rust backend via FFI
-- **🔒 Privacy-First:** No data ever leaves your network - work confidential by design
-- **⚡ Network-Speed Sync:** Collaboration as fast as your local network allows
-- **💾 Device-Scale Storage:** Store as much as your devices can hold
-- **☁️ Optional Cloud Relay:** Pay-per-use cloud backup and relay services
+Cyan is our offline-first collaborative, p2p cloudless xaero_id, xaeroflux, xaeroAI based flutter social network app for b2b usecases. More details later.
 
 ### Technical Architecture
 
