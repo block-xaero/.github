@@ -34,17 +34,17 @@ Decentralized identity infrastructure built on `did:peer` with Falcon-512 post-q
 Reactive, distributed event streaming with built-in CRDT support for conflict-free collaboration.
 
 **Key Features:**
-- Rx-style reactive programming patterns
-- Automatic conflict resolution via CRDTs
-- Memory-mapped storage with Merkle indexing
-- Dual-loop processing (streaming + batch)
-- Direct peer-to-peer synchronization
+- Stack Friendly pre-sized, pre-allocated event ring buffers to (static) store event data
+- Fast LMDB based event storage - uses mmap and page pool.
+- XaeroID support built in - did:peer falcon-512 signed with zk proofs
+- Point, Range and Continous Query for dead simple pulling of events.
+- Vector search for similar payloads.
 
 ### 🧠 **XaeroAI** - Collaborative Nano AI
 Tiny AI models (226MB total) that learn and coordinate peer-to-peer across devices.
 
 **Key Features:**
-- 4 specialized nano models for code, OCR, and text
+- Quantized candle-rs yolo 11n model with 2 stage pipeline.
 - Distributed learning without data sharing
 - Memory-mapped inference on mobile devices
 - Multi-model task coordination
