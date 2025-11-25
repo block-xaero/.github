@@ -1,8 +1,8 @@
 # Block-Xaero
 
-**Powering Web3, Offline-First, Decentralized Equitable Collaboration through offline-first AI**
+**Powering Offline-First, Decentralized and fast Collaboration through offline-first libraries and Apps**
 
-Block-Xaero is building the foundational infrastructure for truly decentralized applications that work without the cloud. Our technology stack enables native apps with cryptographic security, collaborative intelligence, and peer-to-peer coordination—all running directly on your devices.
+Block-Xaero is building the foundational  local-first infrastructure for truly decentralized applications that work without the cloud. Our technology stack enables native apps with peer-to-peer collaboration with focus on efficiency and privacy. 
 
 ---
 
@@ -20,137 +20,35 @@ We're creating a world where:
 ---
 
 ## Technology Stack
+**UI**: We use Swift and Flutter for UI
+**Backend:** Our Backend is mostly local first built on Rust with tokio and candle-rs.
+**AI models:** PyTorch and Candle-rs - quantized and local, we use MIT or Apache licensed models.
 
-### 🔐 **XaeroID** - Quantum-Resistant Identity
-Decentralized identity infrastructure built on `did:peer` with Falcon-512 post-quantum cryptography.
+## Xaeroflux
+Event store that synchronizes with peers via QUIC built on Rust and Iroh.
 
-**Key Features:**
-- Falcon-512 quantum-resistant signatures
-- Zero-knowledge proofs via arkworks + rkyv
-- Self-sovereign identity without central authorities  
-- Cryptographic verification for all operations
+## XaeroID
+did:peer SSI identity combined with ZK Proofs
 
-### 🌊 **XaeroFlux** - P2P Event Streaming Engine
-Reactive, distributed event streaming with built-in CRDT support for conflict-free collaboration.
 
-**Key Features:**
-- Stack Friendly pre-sized, pre-allocated event ring buffers to (static) store event data
-- Fast LMDB based event storage - uses mmap and page pool.
-- XaeroID support built in - did:peer falcon-512 signed with zk proofs
-- Point, Range and Continous Query for dead simple pulling of events.
-- Vector search for similar payloads.
-
-### 🧠 **XaeroAI** - Collaborative Nano AI
-Tiny AI models (226MB total) that learn and coordinate peer-to-peer across devices.
-
-**Key Features:**
-- Quantized candle-rs yolo 11n model with 2 stage pipeline.
-- Distributed learning without data sharing
-- Memory-mapped inference on mobile devices
-- Multi-model task coordination
-- Learning from workspace collaboration events
-
----
 
 ## Flagship Application: Cyan
-Cyan is our offline-first collaborative, p2p cloudless xaero_id, xaeroflux, xaeroAI based flutter social network app for b2b usecases. More details later.
+Cyan is our offline-first design and collaboration social network built to scale without mostly no cloud infrastructure. It is a collaboration social network built to serve as knowledgeware-house but in a fun collaborative way. Think of slack + confluence + pinterest in intra-business - b2b world.
 
 ### Technical Architecture
 
 ```
 Cyan App Architecture
-├── Flutter Frontend (Dart)
+├── Swift / Flutter
 ├── Rust Backend (FFI)
-   ├── XaeroID (Identity + Auth)
-   ├── XaeroFlux (Event Sync + CRDT + P2P)
+   ├── Cyan Backend
+   ├── Cyan Integrations (Slack, JIRA, Confluence and much more) - bridging the other tool collaboration gap in a meaningful way.
+   ├── XaeroFlux (Event Sync using QUIC)
    └── XaeroAI (On-device Inference)
 ```
 
 ---
 
-## Why Block-Xaero Technology Matters
-
-### **Merkle-Indexed Efficiency**
-Every operation is cryptographically verified and efficiently indexed using Merkle Mountain Ranges, enabling:
-- Instant verification of data integrity
-- Efficient synchronization of only changed data
-- Cryptographic proofs for audit trails
-- Zero-trust operation verification
-
-### **Native App Empowerment**
-Our technology is built for native applications, not web browsers:
-- Memory-mapped file access for zero-copy operations
-- Multi-threaded processing with Rust performance
-- Direct hardware access for optimal AI inference
-- Platform-specific optimizations (iOS, Android, macOS, Windows)
-
-### **Equitable AI Distribution**
-Unlike Big Tech's centralized AI:
-- Models run on user devices, not corporate servers
-- Learning happens collaboratively without data collection
-- Computational costs distributed across participants
-- No vendor lock-in or API dependencies
-- Users own their AI models and training data
-
-### **True Offline-First Design**
-Applications work completely disconnected:
-- Full functionality without internet
-- Peer-to-peer sync when devices are nearby
-- Graceful degradation in network conditions
-- Automatic synchronization when connectivity returns
-
----
-
-## Use Cases Beyond Cyan
-
-Our technology stack enables a new class of applications:
-
-### **Enterprise Collaboration**
-- Secure document editing without cloud exposure
-- Real-time design collaboration for sensitive projects
-- Distributed team coordination with cryptographic audit trails
-
-### **Educational Technology**
-- Collaborative learning environments in schools
-- Offline-capable educational content with AI tutoring
-- Student work that remains private and local
-
-### **Healthcare Applications**
-- Medical record systems that never leave healthcare facilities
-- Collaborative diagnosis tools with privacy preservation
-- AI-assisted analysis without data exposure
-
-### **Financial Services**
-- Transaction processing with cryptographic verification
-- Collaborative analysis tools for sensitive financial data
-- Audit-ready systems with immutable event logs
-
----
-
-## Technical Differentiators
-
-### **Conflict-Free Collaboration**
-Our CRDT implementation automatically resolves conflicts when multiple users edit simultaneously:
-- Last-Writer-Wins for simple values
-- OR-Sets for collections that grow and shrink
-- Counters for metrics and voting
-- Custom CRDTs for domain-specific needs
-
-### **Efficient Event Processing**
-Dual-loop architecture handles both real-time and batch operations:
-- Streaming loop for immediate updates (cursor movements, typing)
-- Batch loop for conflict resolution (document edits, state changes)
-- Intelligent event routing based on operation type
-- Backpressure management for high-throughput scenarios
-
-### **Zero-Copy Performance**
-Memory-mapped files and zero-copy serialization deliver native performance:
-- Events stored directly in memory-mapped pages
-- Efficient data structures with bytemuck for zero-copy access
-- Append-only files for optimal write performance
-- Segmented storage for efficient random access
-
----
 
 ## Getting Started
 
@@ -158,6 +56,9 @@ Memory-mapped files and zero-copy serialization deliver native performance:
 
 ```bash
 # Clone the ecosystem
+git clone https://github.com/block-xaero/cyan-ios.git
+git clone https://github.com/block-xaero/cyan-backend.git
+git clone https://github.com/block-xaero/cyan-backend-integrations.git
 git clone https://github.com/block-xaero/xaeroflux.git
 git clone https://github.com/block-xaero/xaeroid.git  
 git clone https://github.com/block-xaero/xaeroai.git
@@ -169,76 +70,15 @@ cd ../xaeroai && cargo build
 ```
 
 ### For Enterprises
+Contact us at: heejee.jo@blockxaero.io or anirudh.vyas@blockxaero.io for a demo of how Cyan can help you.
 
-Contact us to discuss how Block-Xaero technology can enable your decentralized application needs:
-- Proof-of-concept development
-- Custom CRDT implementations
-- On-device AI model optimization
-- P2P networking architecture design
 
----
-
-## Business Model
-
-### **Open-Source Foundation**
-Core infrastructure (XaeroID, XaeroFlux, XaeroAI) is open-source under MPL-2.0, enabling:
-- Community contributions and improvements
-- Transparency in cryptographic implementations
-- Vendor-neutral technology adoption
-- Academic research and validation
-
-### **Commercial Applications**
-Applications built on our stack (like Cyan) use Business Source License (BUSL):
-- Free for small teams and personal use
-- Commercial licensing for enterprise deployment
-- Revenue sharing for ecosystem growth
-- Sustainable funding for continued development
-
-### **Value-Added Services**
-Optional cloud services for enhanced functionality:
-- Relay servers for global synchronization
-- Backup services for disaster recovery
-- Enhanced discovery for peer finding
-- Performance analytics and monitoring
-
----
-
-## Roadmap
-
-### **Phase 1: Foundation** (Current)
-- ✅ XaeroID quantum-resistant identity
-- ✅ XaeroFlux event streaming with CRDTs
-- ✅ XaeroAI nano models for inference
-- 🚧 Cyan whiteboarding application
-
-### **Phase 2: Ecosystem** (Next 6 months)
-- Mobile SDK for iOS and Android
-- Developer tools and documentation
-- Reference implementations for common use cases
-- Performance optimizations and benchmarks
-
-### **Phase 3: Scale** (6-12 months)
-- Enterprise-grade security audits
-- Advanced AI model architectures
-- Cross-platform deployment tools
-- Ecosystem partner integrations
-
----
 
 ## Join the Decentralized Future
-
-Block-Xaero is more than technology—it's a movement toward user-owned, privacy-preserving applications that work without Big Tech infrastructure.
+Block-Xaero is more than technology—it's a movement toward user-owned, privacy-preserving applications that work without Cloud infrastructure needs.
 
 ### **Community**
 - **Website:** [blockxaero.io](https://blockxaero.io)
 - **Discord:** [discord.gg/pDy2hu7X](https://discord.gg/pDy2hu7X)
 - **GitHub:** [github.com/block-xaero](https://github.com/block-xaero)
 
-### **Contact**
-For partnerships, enterprise licensing, or technical discussions:
-- **Email:** hello@blockxaero.io
-- **Enterprise:** enterprise@blockxaero.io
-
----
-
-**Building the infrastructure for Web3's offline-first future, one cryptographic proof at a time.**
