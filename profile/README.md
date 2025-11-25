@@ -20,9 +20,9 @@ We're creating a world where:
 ---
 
 ## Technology Stack
-**UI**: We use Swift and Flutter for UI
-**Backend:** Our Backend is mostly local first built on Rust with tokio and candle-rs.
-**AI models:** PyTorch and Candle-rs - quantized and local, we use MIT or Apache licensed models.
+- **UI**: We use Swift and Flutter for UI
+- **Backend:** Our Backend is mostly local first built on Rust with tokio and candle-rs.
+- **AI models:** PyTorch and Candle-rs - quantized and local, we use MIT or Apache licensed models.
 
 ## Xaeroflux
 Event store that synchronizes with peers via QUIC built on Rust and Iroh.
