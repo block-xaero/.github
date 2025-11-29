@@ -25,7 +25,7 @@ We're creating a world where:
 - **AI models:** PyTorch and Candle-rs - quantized and local, we use MIT or Apache licensed models.
 
 ## Xaeroflux
-Event store that synchronizes with peers via QUIC built on Rust and Iroh.
+Event store that synchronizes with peers via QUIC built on Rust, tokio and Iroh.
 
 ## XaeroID
 did:peer SSI identity combined with ZK Proofs
@@ -42,7 +42,7 @@ Cyan App Architecture
 ├── Swift / Flutter
 ├── Rust Backend (FFI)
    ├── Cyan Backend
-   ├── Cyan Integrations (Slack, JIRA, Confluence and much more) - bridging the other tool collaboration gap in a meaningful way.
+   ├── Cyan Backend Integrations (Slack, JIRA, Confluence and much more) - bridging the other tool collaboration gap in a meaningful way.
    ├── XaeroFlux (Event Sync using QUIC)
    └── XaeroAI (On-device Inference)
 ```
